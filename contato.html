@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
+<head>  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Contato</title>
 </head>
 <body>
-    <header>
+    <header id="header-top">
         <h1>Fale conosco</h1>
         <p>Deixe suas dúvidas ou sugestões.</p>
     </header>
     
     <!--  Emmet nav>(ul>(li>a)*3)+div>a -->
 
-    <nav>
+    <nav id="nav-top">
         <ul>
             <li><a href="index.html" target=_blank>Home</a></li>
             <li><a href="https://cappacita.com.br" target=_blank>ALTU</a></li>
@@ -23,9 +23,9 @@
         <div class='usuario'><a href="">Usuário</a></div>
     </nav>
 
-    <section>
+    <section id="section-form">
         <main>
-            <form>
+            <form method="GET" action="./post_servidor.php" autocomplete="">
                 <fieldset>
                     <legend>Dados Pessoais</legend>
 
@@ -41,13 +41,13 @@
 
                     <legend>Preferência de contato:</legend>
 
-                    <input type="radio" name="preferencia_contato" id="sms" value="sms">
+                    <input class= "preferencia" type="radio" name="preferencia_contato" id="sms" value="sms">
                     <label for="sms">SMS</label>
                     
-                    <input type="radio" name="preferencia_contato" id="email" value="email">
+                    <input class= "preferencia" type="radio" name="preferencia_contato" id="email" value="email">
                     <label for="email">Email</label>
                     
-                    <input type="radio" name="preferencia_contato" id="ligacao" value="ligacao">
+                    <input class= "preferencia" type="radio" name="preferencia_contato" id="ligacao" value="ligacao">
                     <label for="ligacao">Ligação</label>
 
                 </fieldset>
@@ -68,6 +68,34 @@
             </form>
         </main>
     </section>
+    <footer>
+        <figure>
+            <img class="logo" src="../logo cappacita.png" alt="Logo do Cappacita Dev">
+            <figcaption>Cappacita Dev 2021</figcaption>
+        </figure>
+        <section>
+            <ul>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li><a href="">Úteis 1</a></li>
+                <li><a href="">Úteis 2</a></li>
+                <li><a href="">Úteis 3</a></li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+            </ul>
+        </section>   
+                    
+    </footer>
 
 </body>
 </html>
